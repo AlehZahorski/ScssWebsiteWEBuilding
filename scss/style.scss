@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(255, 182, 45);
+    font-size: 16px;
+}
+h1{
+    color: rgb(36, 36, 36);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+ul, li {
+    display: block;
+}
+.display{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    &_menu{
+        display: flex;
+        &__logo{
+            canvas{
+                border-radius: 100px;
+                background-color: green;
+            }
+        }
+        &__links{
+            margin-left: auto;
+            ul{
+                li{
+                    display: inline;
+                    overflow: hidden;
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: black;
+                        margin-right: 26px;
+                    }
+                }
+            }
+        }
+        &__switch{
+            img{
+                width: 54px;
+            }
+        }
+    }
+}
