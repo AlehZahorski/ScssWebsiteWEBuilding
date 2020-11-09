@@ -9,6 +9,22 @@ body {
   *::before, *::after {
     box-sizing: border-box; }
 
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white; }
+
 ul, li {
   display: block; }
 
@@ -63,7 +79,7 @@ ul, li {
       .header_mainScreen__left__form input {
         height: 57px;
         border: none;
-        border-bottom: 2px solid #7c7c7c;
+        border-bottom: 2px solid #ebebeb;
         background-color: #242336;
         outline: none;
         margin-bottom: 10px;
@@ -71,11 +87,12 @@ ul, li {
       .header_mainScreen__left__form textarea {
         height: 180px;
         border: none;
-        border-bottom: 2px solid #7c7c7c;
+        border-bottom: 2px solid #e2e2e2;
         background-color: #242336;
         outline: none;
         margin-bottom: 20px;
-        color: #fff; }
+        color: #fff;
+        resize: vertical; }
       .header_mainScreen__left__form button {
         position: relative;
         display: inline-block;
@@ -152,3 +169,14 @@ ul, li {
     .header_mainScreen img {
       display: flex;
       margin-left: auto; }
+
+.about__h2 {
+  width: 120px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #6FB6FE 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%, #6FB6FE 100%); }
+  .about__h2 h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 71px; }
